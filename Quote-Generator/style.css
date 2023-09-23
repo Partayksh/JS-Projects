@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #313131;
+}
+.quote-box{
+    padding: 40px;
+    background-color: #fff;
+    position: absolute;
+    width: 40rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px 0px rgba(0,0,0,o.15);
+    position: relative;
+}
+.quote-box h2{
+    margin-bottom: 30px;
+    font-size: 32px;
+    position: relative;
+}
+.quote-box h2::after{
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(23, 124, 229);
+    position: absolute;
+    bottom: -10px;
+    left:50%;
+    transform: translate(-50%);
+}
+.quote{
+    font-size: 21px;
+    min-height: 110px;
+}
+.quote::before,.quote::after{
+    content: '"';
+}
+.author{
+    display: block;
+    font-size: 17px;
+    margin-top: 10px;
+    position: relative;
+    float: right;
+}
+.author::before{
+    content: '';
+    width: 12px;
+    height: 1px;
+    background-color: rgb(141, 146, 152);
+    position: absolute;
+    top: 50%;
+    left:-18px;
+}
+
+.quote-box div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.quote-box button{
+   background: rgb(23, 124, 229);
+   columns: #fff;
+   border-radius: 25px;
+   border:  1px solid rgb(23, 124, 229) ;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 5px;
+   cursor: pointer;
+   width: 150px;
+   height: 50px;
+}
