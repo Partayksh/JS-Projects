@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #cf9aff, #95c0ff);
+  columns: #ffffff;
+  padding-top: 4%;
+  padding-left: 10%;
+}
+.Notes {
+  color: #ffffff;
+  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+}
+button {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #830df2;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.note-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.note {
+  position: relative;
+  height: 140px;
+  min-width: 35rem;
+  background-color: #ffffff;
+  margin: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  outline: none;
+  overflow: auto;
+}
+.notes i {
+  width: 25px;
+  position: absolute;
+  bottom: 10px;
+  right: 2px;
+}
+.trans{
+    cursor: pointer;
+}
+textarea::-webkit-scrollbar{
+    display: none;
+}
+textarea{
+    width: 95%;
+    height: 95%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    line-height: 1.5;
+    font-family: monospace;
+    font-size: 0.90rem;
+    resize: none;
+}
