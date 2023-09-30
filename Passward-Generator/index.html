@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Generate your Password</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Enter Your Custamisation</h1>
+        <div class="main">
+            <div class="row" id="row1">
+                <span id="pass-box"></span>
+            </div>
+            <div class="row" id="row2">
+                <label for="number"> Enter the Length</label>
+                <input type="number" name="num" id="number" value="8">
+            </div>
+            <div class="row" id="row3">
+                <label for="Uppercase">Contain Uppercase</label>
+                <input type="checkbox" id="Uppercase">
+            </div>
+            <div class="row" id="row4">
+                <label for="Lowercase">Contain Lowercase</label>
+                <input type="checkbox" id="Lowercase">
+            </div>
+            <div class="row" id="row5">
+                <label for="Number">Contain Numbers</label>
+                <input type="checkbox" id="Number">
+            </div>
+            <div class="row" id="row6">
+                <label for="Symbol">Contain Symbol</label>
+                <input type="checkbox" id="Symbol">
+            </div>
+            <div class="row" id="row7">
+                <button class="btn">Generate</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
